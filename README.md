@@ -45,3 +45,42 @@ Start Node
 ```
 $ ./src/zend -regtest -websocket
 ```
+
+## Build Sidechains-SDK
+
+Install Java & Maven.
+
+clone 
+```
+$ git clone https://github.com/HorizenOfficial/Sidechains-SDK.git
+```
+
+cd
+```
+cd Sidechains-SDK
+```
+
+Build
+```
+$ mvn clean package
+```
+```
+[INFO] -----------------------< com.horizen:Sidechains >-----------------------
+[INFO] Building Sidechains 0.2.6                                          [4/4]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Sidechains ---
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Sidechains 0.2.6:
+[INFO] 
+[INFO] io.horizen:sidechains-sdk .......................... SUCCESS [11:01 min]
+[INFO] sidechains-sdk-simpleapp ........................... SUCCESS [ 42.414 s]
+[INFO] sidechains-sdk-scbootstrappingtools ................ SUCCESS [ 18.936 s]
+[INFO] Sidechains ......................................... SUCCESS [  0.016 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  11:30 min
+[INFO] Finished at: 2021-01-21T23:35:10-08:00
+[INFO] ------------------------------------------------------------------------
+```
