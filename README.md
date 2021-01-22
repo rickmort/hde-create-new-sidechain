@@ -497,3 +497,282 @@ java.lang.IllegalStateException: Proving key file at path /home/rickmort/Escrito
 
 Simple Sidechain application successfully started..
 ```
+[image]
+
+## Forward Transfer: From Mainchain to Sidechain
+Check mainchain balance
+```
+$ ./src/zen-cli -regtest getbalance
+```
+
+```
+
+1086.49994793
+```
+
+Check sidechain balance
+```
+curl -X POST "http://127.0.0.1:9085/wallet/balance" -H  "accept: application/json" -H  "Content-Type: application/json"
+```
+
+```
+{
+  "result": {
+    "balance": 25000000000
+  }
+}
+```
+
+Transfer
+
+./src/zen-cli -regtest sc_send "address" amount "scid"
+```
+$ ./src/zen-cli -regtest sc_send "bca66a551ea4f0ccabf946da1d4fb68426088137e8837505e5b1371313be0a9e" 250 "6a95cc753aa09e1b1c639ce640147dae5e7ec503c91182e49fe3acce02a56eb5"
+```
+
+```
+c492f4563221a7efa677f559fddce0963e64b528d8c70dcdd10a5f4376461254
+```
+
+Get tx information
+ ./src/zen-cli -regtest gettransaction "idtx"
+ ```
+ ./src/zen-cli -regtest gettransaction "c492f4563221a7efa677f559fddce0963e64b528d8c70dcdd10a5f4376461254"
+ ```
+ 
+ ```
+ {
+  "amount": -250.00000000,
+  "fee": -0.00003546,
+  "confirmations": 0,
+  "txid": "c492f4563221a7efa677f559fddce0963e64b528d8c70dcdd10a5f4376461254",
+  "walletconflicts": [
+  ],
+  "time": 1611356333,
+  "timereceived": 1611356333,
+  "vsc_ccout": [
+  ],
+  "vft_ccout": [
+    {
+      "scid": "6a95cc753aa09e1b1c639ce640147dae5e7ec503c91182e49fe3acce02a56eb5",
+      "value": 250.00000000,
+      "n": 0,
+      "address": "bca66a551ea4f0ccabf946da1d4fb68426088137e8837505e5b1371313be0a9e"
+    }
+  ],
+  "vjoinsplit": [
+  ],
+  "details": [
+    {
+      "sc address": "bca66a551ea4f0ccabf946da1d4fb68426088137e8837505e5b1371313be0a9e",
+      "category": "crosschain",
+      "amount": -250.00000000,
+      "fee": -0.00003546,
+      "size": 3544
+    }
+  ],
+  "hex": "fcffffff171962c9dbd7db420d03a4c207e908920ef13d5659d05039e13ba156a176c5c976000000006a473044022012977970c0e6cf68e4eb38dd62880f33ad36588fd1be3471452aaf62a976eaa50220571c4dd3571d47490913ad981f43925130c1d3d515e2c28da5aeea1256788fe9012103d3d10a963b4f8efeaed8bcfc16cd3e77c11842041416323ac047360797d773eafeffffff2fcd0612888675306ca9167bc9326ada548c70d102eb56e838774843cec12af2000000006a47304402206e0e271e6fc3d7882d18c3510111a728be3bb822cc7c2749f9cad8d35dd9636c02202a177d4ee8432cedc969e7efeefa82905aaa4dea35f65652c9b52c2cd7901037012103d3d10a963b4f8efeaed8bcfc16cd3e77c11842041416323ac047360797d773eafeffffff27905fcab4107d4d4c2e7e1016a3c88c34e85e067d5305da837d54739ba4197c000000006a47304402201e320d3b6525b8d6cad147c457485674564d19a750e0949bf5e76906f5192740022047e8855e98763882edc252aabf37b8bae84992c033c3a3aa0740607463fbdf23012103d3d10a963b4f8efeaed8bcfc16cd3e77c11842041416323ac047360797d773eafeffffffa6b559c0af475bee4e9fd02dc67a28edcf861d69686f5f8cd9f6d09248d5d503000000006b483045022100dfadd17e0a59baabd0f10b559c52d5c972c2a313b923ff0948732c56221bd6600220771ef075dfb12651da56bbefc04a6650efb3c77e3dbe52582804900418848891012103d3d10a963b4f8efeaed8bcfc16cd3e77c11842041416323ac047360797d773eafeffffff26502131f0fcf1bf08b2180d5cd24edf92aaeab7f3a901533fd77274f1ab3909000000006a47304402202fbada28572e2f47dda85d7feb603a8537f0249feca9740c368688117b6096ef022009cea1b031a35a38ed7bcc2a2a5a58e0df3b9566f903cf66c65d9f9021d8e8fc012103d3d10a963b4f8efeaed8bcfc16cd3e77c11842041416323ac047360797d773eafeffffff3a431fe109477fa6a45745168932d0625ba1d06071c5d6602dab5b682d01ba57000000006a473044022059fc8b838bbcd684b6ddd4f6e779fa209a8ad8857fcace333ce40c3ac5e517990220020d2888618b534afd7d35e2f018fb1cf2d35b82462e123dbf199ff6902e966e012103d3d10a963b4f8efeaed8bcfc16cd3e77c11842041416323ac047360797d773eafeffffff6e8f63c74b74ed4a951ef6d783213c41d826288253e730a7b582ff7dffa48c08000000006a4730440220324e65cf886f8dd7e0e8aa43b63dda12b1b92decd09902e07bcca047fbcb7c6b0220576fcdbb54a13c04ab8ab047cc8f665f5ac29b9450f43b1ba8307c7d33d1d22b012103d3d10a963b4f8efeaed8bcfc16cd3e77c11842041416323ac047360797d773eafeffffffbe98d581ed7033d0de3800949cdbc2788bc87bc34b57073912a0188a5a60f570000000006a4730440220436c95f362b23ad8571bcd992dc851fe9da4a06d98b8be67d358ac75d465237b02206d48894ef2d4362fbb12c5a401dbd4e7c594faada5fda58c8b17b049413ca924012103d3d10a963b4f8efeaed8bcfc16cd3e77c11842041416323ac047360797d773eafeffffff8bd64666c7b7b20ed7e383c3c17df70c9e443322f85a699c2981740e6f6710ca000000006a47304402204142c8eb9cbe3536449046b78d13d3e93e0a6db92b971391a7deddeb8951f518022044c07977844eb8258363f518b4ce2fee63cbcb2ce31cb11c99ae3dfe12f20cf2012103d3d10a963b4f8efeaed8bcfc16cd3e77c11842041416323ac047360797d773eafeffffff38c0a8df0e1f805438fb73a5e94e5c945afe91e645abe2d02effa7395122792d000000006b4830450221009627f305146f2135cfaec01b95a6c97bec4ac40d50d8f28c23592758c6adfae002207ef5a486481708967196b58eb250559e13d9f0a911adba30f3fe45302cdecee1012103d3d10a963b4f8efeaed8bcfc16cd3e77c11842041416323ac047360797d773eafeffffff50e74b81a3a988b76bd9c903791b1e53709d39c6309bcbe0708149a4223d2435000000006a4730440220638c5d358fc85bd267908e80fe46abc1e71d27fdb58f0b936d0d8fd6ba24ed6e02202335603e75cc68078d71c46b612f2acb489b4f162342c0dc95c55a73e43abebf012103d3d10a963b4f8efeaed8bcfc16cd3e77c11842041416323ac047360797d773eafeffffff1f9f4eb314d438d4588d98fe8aefda48312fd466c2a9e517b96f07bd997a3ce1000000006a473044022065f156906f76b26ab8446b114ecaeec5fd230a10cf381232350109cc7396124102206855b379513548ea257072e5d7da4e54e08460489d9e1e51d554482f10830ddf012103d3d10a963b4f8efeaed8bcfc16cd3e77c11842041416323ac047360797d773eafeffffff38ab69ff1ad878e29bedbade59c76c8cddfe32f39f3c67d4c736eee3966b0607000000006a4730440220481de97db122695a60c7a293dac110f46e3ffa97ecc2318f6f6dcd0c5360d3a3022070fddaa82a457fe32f74fef5acd3793f9b17c49df92f48b948230809145597d3012103d3d10a963b4f8efeaed8bcfc16cd3e77c11842041416323ac047360797d773eafeffffffa00039494ac764859307f6a6fb86c0ad9eebbe051a22137b758a125a6b5b79f5000000006b483045022100e30c934faa37ed66680458073c8fe110341aed2c6f407d3b0cdedb9439ba4b5d0220118a40d236c1efde5452206c140777fa7dedf56062120a6bc8acb2c8ae3d5628012103d3d10a963b4f8efeaed8bcfc16cd3e77c11842041416323ac047360797d773eafeffffff14b4434c412d6be8a3a362e8496e93b5c45a4b9a3c0d496e228e468abbc1fa88000000006b483045022100ac295e500c0dc4154681ef18d4b4f66480b670cbb242d0347310835711b10c4202201d3243c68d6cb6a6a4490aec6f0abf7d3feec8667a9dc1fafbe8236068e075c8012103d3d10a963b4f8efeaed8bcfc16cd3e77c11842041416323ac047360797d773eafeffffff74cb2be34cc11db7952c389266f44ca1ff9bd71f0a0d4f08745cf517c37c61c1000000006b483045022100f6495e8072c6164d7c9d31498bf9ca590bb1e953875f81a7108ec4bbf6a8ee4c0220086d8876463997887607e11653bc9db0c08d450ed91673778416bdf4406cc7e6012103d3d10a963b4f8efeaed8bcfc16cd3e77c11842041416323ac047360797d773eafeffffffcf76f2c7f33202c617cfa4aa891e6ebbd46cd3d232e37d31feecfb507c8ad9cd000000006b483045022100ae756229f96c8e0721edd72d6ce6117574dd6c86d0629ec15ad18303c171599002205f58f4b9b6e8ade38cac0c707c8130cb4c100467e6ae9259f7da6065bf3c9ce7012103d3d10a963b4f8efeaed8bcfc16cd3e77c11842041416323ac047360797d773eafeffffff4d9ff9c48378d8596d0fbf342f478a9786b27329a943feb2a08ab503c86c7d65000000006b483045022100d14b61a31b7be82f7249713ffd23a56023a5b2a7f1b803155c065538d9bfa26f0220498c3ea6f30adcc51d542c727322747a499e3d897bf79191af5cac55aefd0ef6012103d3d10a963b4f8efeaed8bcfc16cd3e77c11842041416323ac047360797d773eafeffffffb3bc8a353cea7173100b143e55138b479d45296dfa14d3a655b81edc9f18c99d000000006b483045022100afde541ee97ed6a5fcf26295ac6353734c4781d755e97f972cb774955d0ee76b02202ce780a17677653ddffc167478b53a72611b73b47b058a22db19a1ced7e7d2e2012103d3d10a963b4f8efeaed8bcfc16cd3e77c11842041416323ac047360797d773eafeffffffeab1bbee301046c3273527ef4f5836f20365fd4b06e38a734fc23484e71adbf8000000006a473044022038615a34e415a00858d8479d12bec8680004a9898c39d8c53e67c0eab5e2bd4f022004504d31af104a1132f801ddb71ae8f537a03df6bc5a00a1e4145bba3923cbb8012103d3d10a963b4f8efeaed8bcfc16cd3e77c11842041416323ac047360797d773eafeffffff771dba398732b20644f3faccc6e3428427300be6c6dbf0f7169f28ab9f8347f4000000006b483045022100bf8f2abf9b935577e7b8d4fbad8d5b596fd298da142b868bfef7fa23c9d96284022013bbbc8e9a7f9054e9ebdff9b030634106ab47ffbf60fdac9ed86b4f24f09473012103d3d10a963b4f8efeaed8bcfc16cd3e77c11842041416323ac047360797d773eafeffffff13af4ac152f3f72d0ba29354795ca9554be2473ec2caf9df7ed2298cc518578c000000006b483045022100bdc8f3fceb619f2707070303349fdfe6be656be6d7c569472d190565a0cfd2460220676541418e4c30f10144f1290916c94b48d58e8d1be8fb8d5550f251054c4469012103d3d10a963b4f8efeaed8bcfc16cd3e77c11842041416323ac047360797d773eafeffffff4b94170c4eb7b409f8d784721acbd00ca656f6d9014cdd26e6a133685940a87a000000006a47304402207139796badb11c86fd46301d99ec7c3d3780b2560462c1d1235d74fbdced208f022002d7311607c0af299e4f2f532e6084eb3fd85b6810ea3552368fdaa30f202cd7012103d3d10a963b4f8efeaed8bcfc16cd3e77c11842041416323ac047360797d773eafeffffff01ef99be00000000003c76a914440dfb791283033bd5aaf60523262344aac0e9b588ac20bb1acf2c1fc1228967a611c7db30632098f0c641855180b5fe23793b72eea50d00b4000100ba1dd2050000009e0abe131337b1e5057583e83781082684b64f1dda46f9abccf0a41e556aa6bcb56ea502ceace39fe48211c903c57e5eae7d1440e69c631c1b9ea03a75cc956ad3000000"
+}
+```
+
+Generate a mainchain block
+```
+$ ./src/zen-cli -regtest generate 1
+```
+
+```
+[
+  "0eca19f1a2abb78e9cf1411fc1cda024b3c27903c95b4c3256668b63e3024c1c"
+]
+```
+
+Check mainchain balance again
+```
+$ ./src/zen-cli -regtest getbalance
+```
+
+```
+845.24991247
+```
+
+Forging info to get actual epoch and slot to generate next sidechain block
+```
+$ curl -X POST "http://127.0.0.1:9085/block/forgingInfo" -H  "accept: application/json"
+```
+
+```
+{
+  "result": {
+    "consensusSecondsInSlot": 120,
+    "consensusSlotsInEpoch": 720,
+    "bestEpochNumber": 1,
+    "bestSlotNumber": 720
+  }
+}
+```
+
+Generate a new sidechain block
+```
+$ curl -X POST "http://127.0.0.1:9085/block/generate" -H  "accept: application/json" -H  "Content-Type: application/json" -d "{\"epochNumber\":2,\"slotNumber\":1}"
+```
+
+```
+{
+  "result": {
+    "blockId": "6d6ce8a1fe5ebb64c3f4755b4426fa5cf5c9dd990bb263b7fc14eda588a26cae"
+  }
+}
+```
+
+Check sidechain balance again
+```
+$ curl -X POST "http://127.0.0.1:9085/wallet/balance" -H  "accept: application/json" -H  "Content-Type: application/json"
+```
+
+```
+{
+  "result": {
+    "balance": 50000000000
+  }
+}
+```
+
+## Transfers Within the Sidechain
+Create a new sc address
+```
+$ curl -X POST "http://127.0.0.1:9085/wallet/createPrivateKey25519" -H  "accept: application/json"
+```
+
+```
+{
+  "result": {
+    "proposition": {
+      "publicKey": "bfd82340da312443de92c414facd197bec3e12191374913ea183c5083d82c3fc"
+    }
+  }
+}
+```
+
+Send Coins
+```
+$ curl -X POST "http://127.0.0.1:9085/transaction/sendCoinsToAddress" -H  "accept: application/json" -H  "Content-Type: application/json" -d "{\"outputs\":[{\"publicKey\":\"bfd82340da312443de92c414facd197bec3e12191374913ea183c5083d82c3fc\",\"value\":500000000}],\"fee\":0}"
+```
+
+```
+{
+  "result": {
+    "transactionId": "69ae972b0deb4a79872a3ce50f6cdf2f0ce0c16fb84500cfa5852ceeb97b75fa"
+  }
+}
+```
+
+Verify transaction
+```
+$ curl -X POST "http://127.0.0.1:9085/transaction/allTransactions" -H  "accept: application/json" -H  "Content-Type: application/json" -d "{\"format\":true}"
+```
+
+```
+{
+  "result": {
+    "transactions": [
+      {
+        "modifierTypeId": 2,
+        "id": "69ae972b0deb4a79872a3ce50f6cdf2f0ce0c16fb84500cfa5852ceeb97b75fa",
+        "fee": 0,
+        "timestamp": 1611357085314,
+        "newBoxes": [
+          {
+            "nonce": 30248021554142744,
+            "id": "b6a192f21adfeaf3dadd488e8b4350990fdf3dd2bbf709f015c9a070ce8e09b7",
+            "typeId": 1,
+            "value": 500000000,
+            "proposition": {
+              "publicKey": "bfd82340da312443de92c414facd197bec3e12191374913ea183c5083d82c3fc"
+            }
+          },
+          {
+            "nonce": 7273591110770260000,
+            "id": "2d841903eca66a0631cffea33d237aa219ee2fd535abcb25f41f0a218544d628",
+            "typeId": 1,
+            "value": 24500000000,
+            "proposition": {
+              "publicKey": "bca66a551ea4f0ccabf946da1d4fb68426088137e8837505e5b1371313be0a9e"
+            }
+          }
+        ],
+        "unlockers": [
+          {
+            "boxKey": {
+              "signature": "8653460beb8e778c1967c94e72104475388ddcb4db6e075557120fba593387b0b09b0f45597b435e56a28157f6ace44fe719e166cb1d62a5f37677ecbbc18209",
+              "typeId": 1
+            },
+            "closedBoxId": "cfaf7c0c9aa7947cda68550d62f90656d7a56ae4cde1457f203bedf44e2b0ad0"
+          }
+        ],
+        "typeId": 3
+      }
+    ]
+  }
+}
+```
+
+Create a new sidechain block
+```
+$ curl -X POST "http://127.0.0.1:9085/block/generate" -H  "accept: application/json" -H  "Content-Type: application/json" -d "{\"epochNumber\":2,\"slotNumber\":2}"
+```
+
+```
+{
+  "result": {
+    "blockId": "1ff7b0f32c3bc4d05acdf9b6115e09b860d6b9c3e406e74a8d14e927290af0fe"
+  }
+}
+```
+
+Check balances
+```
+$ curl -X POST "http://127.0.0.1:9085/wallet/allBoxes" -H  "accept: application/json" -H  "Content-Type: application/json"
+```
+
+```
+{
+  "result": {
+    "boxes": [
+      {
+        "nonce": -5610299023790702000,
+        "id": "0df2985461d9bfa983513fabe827aa75e7fa225d1d12dbc1df53eb6980bd92ce",
+        "typeId": 3,
+        "blockSignProposition": {
+          "publicKey": "bca66a551ea4f0ccabf946da1d4fb68426088137e8837505e5b1371313be0a9e"
+        },
+        "vrfPubKey": {
+          "valid": true,
+          "publicKey": "f2e7107af90a5e039c285f47a79e665a1712e46ac29343e3fe6282e3fa93bcf25aeb5f24c55e24274815af742d1fd9972ff3e8ed16785599fa7cb7824f005c676cdad5b540036f40cfb10d11cbd2ce783b9a9e58e45e07e56724cc5e945e00008e44cd9e5db09ef17d653e03f7be48172af2b0238f98d5cf56e9bb5bc418e602841fa41adbdd11667766930c305aa2c644bce5742ab10bdb2bd31255627b80048dcb2b3de53fcc22a1edbbb9a453817596f618c89499aa2115722dabdc30000000"
+        },
+        "value": 25000000000,
+        "proposition": {
+          "publicKey": "bca66a551ea4f0ccabf946da1d4fb68426088137e8837505e5b1371313be0a9e"
+        }
+      },
+      {
+        "nonce": 30248021554142744,
+        "id": "b6a192f21adfeaf3dadd488e8b4350990fdf3dd2bbf709f015c9a070ce8e09b7",
+        "typeId": 1,
+        "value": 500000000,
+        "proposition": {
+          "publicKey": "bfd82340da312443de92c414facd197bec3e12191374913ea183c5083d82c3fc"
+        }
+      },
+      {
+        "nonce": 7273591110770260000,
+        "id": "2d841903eca66a0631cffea33d237aa219ee2fd535abcb25f41f0a218544d628",
+        "typeId": 1,
+        "value": 24500000000,
+        "proposition": {
+          "publicKey": "bca66a551ea4f0ccabf946da1d4fb68426088137e8837505e5b1371313be0a9e"
+        }
+      }
+    ]
+  }
+}
+```
