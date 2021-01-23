@@ -430,18 +430,18 @@ scorex {
                          "a29497b4ca11a5604468be2665ce89163783b8e19720ddae7c422a96567b0175a7736c3ab144fe421f9d71dbb80bd2023d17a1d79151dc77b0df43803d854fbf06ae0064f7142e506703a54d596dadd262f08171fc806c00b3834e65dd5e0000df2bbaf68b7e88235036b36abb9971d911a8d41b789b08ea8e18191991f3431f382a71e1786cb34bfcab2193720e6d14c0f61bd20047899bd282ec16a950049cc6731df4cd5c18044f5706e9196c2d926d72d0e147ce4cf61aea14fcf13b010000",
                          "f55f248d9ac0ff589c22cb3ee6caec6ef99ee711d25d7742a7d676b72676f59647fab64645c7982b33e1282e7b57953dea02e6e5796ca3c2e71b4b18a6cb1eac28719b4cc01fa43533fc74b94bab2b4633879a27e57b31532e7536c01f3501006c9296debde6536d5cfb24fc83e8ef18f2eaa595efc9649d90c7874814caa81df04f624ce988bd0514cf98134de14ec23fa204343ff12b1f3c9ff6ad2c615a7d81679e464d9b89f74d2b08337ecf83a3d72c3d7f361d40459fe2d4e716df000000",
                          "844304c98ac96b3dc10ee607fdd858d0983b44d195dd643fc8ae51404df5ffa8b4fb5b10fec996806328b10d946525c6fb765f3424a349f7c729ffd894fdd90723cf5f97db7b7691bd0cedf58e55c0c28dbe4176fb879278276978833b3b000007f44422adb761f855e14a305891d21127ed0d662a7b20cb7aff55266b28faa6914f1e6ffff9bd32b7271b121aec072ef8cfa71b2284275097c5ab160f31baab34d9ebf0c8682600110f80c390200c3f9b8f811ca800b7cb45f8028eba73010000",
-                         "04000000603180473033d1e9ae22a1af360010efc40601582795dfcdcfd09a6bab07b91ef0bdeb52db1e9dc0d137a00ae3041c0f7dfb55e9eadfd2c37327db68f4e44ee73735b292b379a13d9f2ae67c9a9fdf337346efd5e41d68b66311f7a25b91600100df8a520ffadbb4751f0dd905bb818cdcd8108aaf42dac73531236b561729ec0d512084de322a8236e25aaa9280fcb03ef3e74097c6a6cc458823835cf6e800e802da10899c938c69b1750168da245a0e60c41efefcefa24f4e15aa07c6610100c00d14e7e0f1b31497a52e475f2ef43e0951a87e097530455456d7d68397a99c86f98696cd04a4f59515fa87834e9d5aedbefb394040d5ecfb5e4b9ca3174bb98ce726e9db5a99d865c1b9a381311ed5098253a6ffda23b5fcdc1c5d9f03000000",
-                         "040000006084a4e9c36e560411962d69604c3468c89a4625c30e4caa49182ec605ef0d6da4976f2e56edc72b83adeee431a041174826537e01b77d26922202e3c6dcb0e46d787a4556affa0906f186c98544a62d42328dd7ddc4ea034c3e74d7a4978a01002496ae66717b40886de0c6f793e914442cad974beff8f807ba735224cc8f3f87c5ea739753ae31cf6a6a381bbd2224c8fe87611716e7175402bf107648c2fed2b626af8e96ee83ff8c58b561dba4373eadd5a52e5375cba0ad3c203b72370000507f2404ebd0d1af20ec6106547623511bf3e988d9d8284c07995ccab46452749b03a48f860d5c8be6ad5fd5c03108c559ba97e718472c7177b45c1f3b2dc68cd66f451a6d1bf22e912503371c93e19b77d2db64d0036bf9fec3a024020a010000"]
+                         "df8a520ffadbb4751f0dd905bb818cdcd8108aaf42dac73531236b561729ec0d512084de322a8236e25aaa9280fcb03ef3e74097c6a6cc458823835cf6e800e802da10899c938c69b1750168da245a0e60c41efefcefa24f4e15aa07c6610100c00d14e7e0f1b31497a52e475f2ef43e0951a87e097530455456d7d68397a99c86f98696cd04a4f59515fa87834e9d5aedbefb394040d5ecfb5e4b9ca3174bb98ce726e9db5a99d865c1b9a381311ed5098253a6ffda23b5fcdc1c5d9f03000000",
+                         "2496ae66717b40886de0c6f793e914442cad974beff8f807ba735224cc8f3f87c5ea739753ae31cf6a6a381bbd2224c8fe87611716e7175402bf107648c2fed2b626af8e96ee83ff8c58b561dba4373eadd5a52e5375cba0ad3c203b72370000507f2404ebd0d1af20ec6106547623511bf3e988d9d8284c07995ccab46452749b03a48f860d5c8be6ad5fd5c03108c559ba97e718472c7177b45c1f3b2dc68cd66f451a6d1bf22e912503371c93e19b77d2db64d0036bf9fec3a024020a010000"]
     signersThreshold = 5
     signersSecrets = ["040000006028e5167b87d2b87459e2bda89a9738597acb46ba41e7323400ceacc6d03ffa20e92858ab5eafe4a4aa4330559eacde07697a3adfedcd98b0ffb41f6080f55c80ac7bc6e666062fe6033453564a8c04a068b99834e3748d7ddca7f3ed60190000130b682839ba74b0b5cd249d3c6fafbb033034b2f6521fe21a7edd9a9527fad90c8a45c007dc44b30c765fbb68591f1e90645f79b8427dc2d9b8aaa9bbd796003aa272f0b9ff74a0b5d69af4c4dc448009f1984094ce502d58c278ae25ea00006668059f6f7dd223c9380c6765db110d6b70b9aeca9140a7324e798f3ce9063b2e936dbbc1f30a575c98b220dde7ad010687fd3b49746cb48488887a3c39cfeb295822521ca90b17c407004fd0899ff39fd4fc4679d9a3b5dc251e953e34010000",
                       "040000006038bb6430b2fc591bf7f2d71e71e2885f0e80b7c0995f66210c2b2bc3a4ad6e820b8cbc5ce89d803219de23d3ed7fb106a78e67b3a0ffc7ebd6bc9678bfcfb62b8e924f26b484e839edd17b05421201e0775b5b233d5c3eda64894ae2a60a0100de173ac9a35730af8efa74ded8ef143c4291ffc6ddea0dc77db04e6e2b63558732acccb49998999f11147059a1f81c62bb08ed52499dd25374257412fa96ca8c1eb97b9f782347664a7844fa6b4e6746944ed93976031321205b93a16a820100cd666df2c730ee12109a7227e189d4b6b6ccfffb54752c2e8130ca2563747fce9a043f1d38d216a28a8c61a2512fbc5aa0d9e038a3f9489a57f49a3fe9c5b520e716ad894479ccc40ac4c02cf4f54de85d006b688c56226a1e0a025acf25000000",
                       "04000000603cbb09fa091ffd86f3f9be7c05cf6d441340fb207ac1cf4cf6d588d4dd734fb3f46f74cd77111a840ef611427d92eed8ae6931d7183f85eb8a3ffa969cebcb824504c4b1dd6c645e5fde841bc1419778c7d926983fc32d8a13e9c5953a430100a29497b4ca11a5604468be2665ce89163783b8e19720ddae7c422a96567b0175a7736c3ab144fe421f9d71dbb80bd2023d17a1d79151dc77b0df43803d854fbf06ae0064f7142e506703a54d596dadd262f08171fc806c00b3834e65dd5e0000df2bbaf68b7e88235036b36abb9971d911a8d41b789b08ea8e18191991f3431f382a71e1786cb34bfcab2193720e6d14c0f61bd20047899bd282ec16a950049cc6731df4cd5c18044f5706e9196c2d926d72d0e147ce4cf61aea14fcf13b010000",
                       "04000000600950f0e0f24cfc1abf9dbe1d174a1094c79d277cb5ac426af32e6120ab7e19e8701419156054ffb1e52a2eaffd9b601115e32bdfd881fe9795253b5d0a1a297a972536e6da8d50283d57e2aee2cce9c9fdd3f8276a84ccdeca128aa203cc0000f55f248d9ac0ff589c22cb3ee6caec6ef99ee711d25d7742a7d676b72676f59647fab64645c7982b33e1282e7b57953dea02e6e5796ca3c2e71b4b18a6cb1eac28719b4cc01fa43533fc74b94bab2b4633879a27e57b31532e7536c01f3501006c9296debde6536d5cfb24fc83e8ef18f2eaa595efc9649d90c7874814caa81df04f624ce988bd0514cf98134de14ec23fa204343ff12b1f3c9ff6ad2c615a7d81679e464d9b89f74d2b08337ecf83a3d72c3d7f361d40459fe2d4e716df000000",
                       "040000006028e522a898553d7d28a4e3b8e7d6bc94e11bac8f432ef4a6343e9321f88f00a8072a483ecf184c186e4ec128a97b5e1c0d28ca1edfc1f2286c22fce8c233465264150d2f3844acdb18ad7e47437023bc54a14d3e43deee74c0aa32c3d5cb0000844304c98ac96b3dc10ee607fdd858d0983b44d195dd643fc8ae51404df5ffa8b4fb5b10fec996806328b10d946525c6fb765f3424a349f7c729ffd894fdd90723cf5f97db7b7691bd0cedf58e55c0c28dbe4176fb879278276978833b3b000007f44422adb761f855e14a305891d21127ed0d662a7b20cb7aff55266b28faa6914f1e6ffff9bd32b7271b121aec072ef8cfa71b2284275097c5ab160f31baab34d9ebf0c8682600110f80c390200c3f9b8f811ca800b7cb45f8028eba73010000",
-                      "df8a520ffadbb4751f0dd905bb818cdcd8108aaf42dac73531236b561729ec0d512084de322a8236e25aaa9280fcb03ef3e74097c6a6cc458823835cf6e800e802da10899c938c69b1750168da245a0e60c41efefcefa24f4e15aa07c6610100c00d14e7e0f1b31497a52e475f2ef43e0951a87e097530455456d7d68397a99c86f98696cd04a4f59515fa87834e9d5aedbefb394040d5ecfb5e4b9ca3174bb98ce726e9db5a99d865c1b9a381311ed5098253a6ffda23b5fcdc1c5d9f03000000",
-                      "2496ae66717b40886de0c6f793e914442cad974beff8f807ba735224cc8f3f87c5ea739753ae31cf6a6a381bbd2224c8fe87611716e7175402bf107648c2fed2b626af8e96ee83ff8c58b561dba4373eadd5a52e5375cba0ad3c203b72370000507f2404ebd0d1af20ec6106547623511bf3e988d9d8284c07995ccab46452749b03a48f860d5c8be6ad5fd5c03108c559ba97e718472c7177b45c1f3b2dc68cd66f451a6d1bf22e912503371c93e19b77d2db64d0036bf9fec3a024020a010000"]
-    provingKeyFilePath = "../../sdk/src/test/resources/sample_proving_key_7_keys_with_threshold_5"
-    verificationKeyFilePath = "../../sdk/src/test/resources/sample_vk_7_keys_with_threshold_5"
+                      "04000000603180473033d1e9ae22a1af360010efc40601582795dfcdcfd09a6bab07b91ef0bdeb52db1e9dc0d137a00ae3041c0f7dfb55e9eadfd2c37327db68f4e44ee73735b292b379a13d9f2ae67c9a9fdf337346efd5e41d68b66311f7a25b91600100df8a520ffadbb4751f0dd905bb818cdcd8108aaf42dac73531236b561729ec0d512084de322a8236e25aaa9280fcb03ef3e74097c6a6cc458823835cf6e800e802da10899c938c69b1750168da245a0e60c41efefcefa24f4e15aa07c6610100c00d14e7e0f1b31497a52e475f2ef43e0951a87e097530455456d7d68397a99c86f98696cd04a4f59515fa87834e9d5aedbefb394040d5ecfb5e4b9ca3174bb98ce726e9db5a99d865c1b9a381311ed5098253a6ffda23b5fcdc1c5d9f03000000",
+                      "040000006084a4e9c36e560411962d69604c3468c89a4625c30e4caa49182ec605ef0d6da4976f2e56edc72b83adeee431a041174826537e01b77d26922202e3c6dcb0e46d787a4556affa0906f186c98544a62d42328dd7ddc4ea034c3e74d7a4978a01002496ae66717b40886de0c6f793e914442cad974beff8f807ba735224cc8f3f87c5ea739753ae31cf6a6a381bbd2224c8fe87611716e7175402bf107648c2fed2b626af8e96ee83ff8c58b561dba4373eadd5a52e5375cba0ad3c203b72370000507f2404ebd0d1af20ec6106547623511bf3e988d9d8284c07995ccab46452749b03a48f860d5c8be6ad5fd5c03108c559ba97e718472c7177b45c1f3b2dc68cd66f451a6d1bf22e912503371c93e19b77d2db64d0036bf9fec3a024020a010000"]
+    provingKeyFilePath = "sdk/src/test/resources/sample_proving_key_7_keys_with_threshold_5"
+    verificationKeyFilePath = "sdk/src/test/resources/sample_vk_7_keys_with_threshold_5"
   }
 
   wallet {
@@ -455,9 +455,10 @@ scorex {
 		scId = "6a95cc753aa09e1b1c639ce640147dae5e7ec503c91182e49fe3acce02a56eb5"
 		powData = "6a660a60030f0f206a660a60030f0f206a660a60030f0f2069660a60030f0f2069660a60030f0f2069660a60030f0f2069660a60030f0f2069660a60030f0f2069660a60030f0f2068660a60030f0f2068660a60030f0f2068660a60030f0f2068660a60030f0f2068660a60030f0f2068660a60030f0f2067660a60030f0f2067660a60040f0f2067660a60040f0f2067660a60040f0f2067660a60040f0f2067660a60040f0f2066660a60040f0f2066660a60040f0f2066660a60040f0f2066660a60040f0f2066660a60040f0f2066660a60040f0f2065660a60040f0f20"
 		mcBlockHeight = 221
-		mcNetwork = regtest
+		mcNetwork = "regtest"
     withdrawalEpochLength = 10
   }
+  
 }
 ```
 
@@ -467,37 +468,17 @@ $ java -cp ./examples/simpleapp/target/sidechains-sdk-simpleapp-0.2.6.jar:./exam
 ```
 
 ```
-java.lang.IllegalStateException: Proving key file at path /home/rickmort/Escritorio/Sidechains-SDK/../../sdk/src/test/resources/sample_proving_key_7_keys_with_threshold_5 is not exist or can't be read
-	at com.horizen.certificatesubmitter.CertificateSubmitter.$anonfun$checkSubmitterMessage$1(CertificateSubmitter.scala:111)
-	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
-	at scala.util.Try$.apply(Try.scala:213)
-	at com.horizen.certificatesubmitter.CertificateSubmitter.com$horizen$certificatesubmitter$CertificateSubmitter$$checkSubmitterMessage(CertificateSubmitter.scala:86)
-	at com.horizen.certificatesubmitter.CertificateSubmitter$$anonfun$checkSubmitter$1.$anonfun$applyOrElse$1(CertificateSubmitter.scala:69)
-	at scorex.core.NodeViewHolder$$anonfun$getCurrentInfo$1.applyOrElse(NodeViewHolder.scala:362)
-	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:175)
-	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:176)
-	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:176)
-	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:176)
-	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:176)
-	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:176)
-	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:176)
-	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:176)
-	at akka.actor.Actor.aroundReceive(Actor.scala:539)
-	at akka.actor.Actor.aroundReceive$(Actor.scala:537)
-	at com.horizen.SidechainNodeViewHolder.aroundReceive(SidechainNodeViewHolder.scala:23)
-	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:612)
-	at akka.actor.ActorCell.invoke(ActorCell.scala:581)
-	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:268)
-	at akka.dispatch.Mailbox.run(Mailbox.scala:229)
-	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
-	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
-	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
-	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
-	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-
-Simple Sidechain application successfully started..
+[2-Hop-akka.actor.default-dispatcher-2] INFO scorex.core.network.NetworkController - Registering handlers for List((1,GetPeers message), (2,Peers message))
+[2-Hop-akka.actor.default-dispatcher-6] INFO scorex.core.network.NetworkController - Successfully bound to the port 9084
+[main] INFO com.horizen.SidechainApp - calculated sysDataConstant is: 3b40286fa6e1a251f2f78873223b657daf7570edd9c62d371da9a67c39aa1213232d43fc309b02d57a7c1e88b654599799e88c248cee2ae0a751cde954bdd67e41611b73c7b46d3102c74159ffa45901ffdfce2174d08527bad67ffb62ea0000
+[2-Hop-akka.actor.default-dispatcher-6] INFO scorex.core.network.NetworkController - Registering handlers for List((55,Inv), (22,RequestModifier), (33,Modifier), (65,Sync))
+[main] INFO com.horizen.websocket.WebSocketConnectorImpl - Starting web socket connector...
+[main] INFO com.horizen.websocket.WebSocketConnectorImpl - Web socket connector started.
+[2-Hop-akka.actor.default-dispatcher-7] INFO com.horizen.certificatesubmitter.CertificateSubmitter - sysDataConstant in Certificate submitter is: 3b40286fa6e1a251f2f78873223b657daf7570edd9c62d371da9a67c39aa1213232d43fc309b02d57a7c1e88b654599799e88c248cee2ae0a751cde954bdd67e41611b73c7b46d3102c74159ffa45901ffdfce2174d08527bad67ffb62ea0000
+[2-Hop-akka.actor.default-dispatcher-7] INFO com.horizen.certificatesubmitter.CertificateSubmitter - Found proving key file at location: /home/rickmort/Escritorio/Sidechains-SDK/sdk/src/test/resources/sample_proving_key_7_keys_with_threshold_5
+[2-Hop-scorex.executionContext-11] INFO com.horizen.certificatesubmitter.CertificateSubmitter - Backward transfer certificate submitter was successfully started.
+Simple Sidechain application successfully started...
 ```
-[image]
 
 ## Forward Transfer: From Mainchain to Sidechain
 Check mainchain balance
@@ -775,4 +756,177 @@ $ curl -X POST "http://127.0.0.1:9085/wallet/allBoxes" -H  "accept: application/
     ]
   }
 }
+```
+
+## Backward Transfer: From Sidechain to Mainchain
+Generate a new mainchain address
+```
+$ ./src/zen-cli -regtest getnewaddress
+```
+
+```
+ztcRMkuzncDZkAuLDYLwbNvjvd2UrGPSvd6
+```
+
+Withdrawal transaction
+```
+$ curl -X POST "http://127.0.0.1:9085/transaction/withdrawCoins" -H  "accept: application/json" -H  "Content-Type: application/json" -d "{\"outputs\":[{\"publicKey\":\"ztcRMkuzncDZkAuLDYLwbNvjvd2UrGPSvd6\",\"value\":500000000}],\"fee\":0}"
+```
+
+```
+{
+  "result": {
+    "transactionId": "5472160dce434a2d109d94321e0380160537b2e46ac5dce5aa60c6fe7e8de556"
+  }
+}
+```
+
+Confirm last transaction
+```
+$ curl -X POST "http://127.0.0.1:9085/transaction/allTransactions" -H  "accept: application/json" -H  "Content-Type: application/json" -d "{\"format\":true}"
+```
+
+```
+{
+  "result": {
+    "transactions": [
+      {
+        "modifierTypeId": 2,
+        "id": "5472160dce434a2d109d94321e0380160537b2e46ac5dce5aa60c6fe7e8de556",
+        "fee": 0,
+        "timestamp": 1611357485714,
+        "newBoxes": [
+          {
+            "nonce": -5337007201389128000,
+            "id": "09a89e3bffbec307c6e848a99b8ca862369c67c048e663beffd252cc1683ecbc",
+            "typeId": 2,
+            "value": 500000000,
+            "proposition": {
+              "publicKey": "ztcRMkuzncDZkAuLDYLwbNvjvd2UrGPSvd6"
+            }
+          },
+          {
+            "nonce": -9138533532627773000,
+            "id": "35f1c05eed7ae1b36062333366afd9c2013bbba0877187c0e2023e318fe56ef4",
+            "typeId": 1,
+            "value": 24000000000,
+            "proposition": {
+              "publicKey": "bca66a551ea4f0ccabf946da1d4fb68426088137e8837505e5b1371313be0a9e"
+            }
+          }
+        ],
+        "unlockers": [
+          {
+            "boxKey": {
+              "signature": "4575d7be14e62f07cbd6546bf3bb498746dc53cec01383c774ac16dfb2d40f95f894a38e68da249a187cc321c443b2fcd1ace19a41f0552c69f84884b13dd708",
+              "typeId": 1
+            },
+            "closedBoxId": "2d841903eca66a0631cffea33d237aa219ee2fd535abcb25f41f0a218544d628"
+          }
+        ],
+        "typeId": 3
+      },
+      {
+        "modifierTypeId": 2,
+        "id": "38d3d81f244bbe415ceb38b7560dc3a43b05272acd688709e71d7307bea72fbf",
+        "fee": 0,
+        "timestamp": 1611357483861,
+        "newBoxes": [
+          {
+            "nonce": 828865174049060100,
+            "id": "507b89ceb2f4fb533549e8f3426eb2071e3ea93b0d288d892a813247e1163ef2",
+            "typeId": 2,
+            "value": 500000000,
+            "proposition": {
+              "publicKey": "ztcRMkuzncDZkAuLDYLwbNvjvd2UrGPSvd6"
+            }
+          }
+        ],
+        "unlockers": [
+          {
+            "boxKey": {
+              "signature": "53a90407f638f43a3445926cb0c9624ba3a1551ef98f155d57b14749436615129d64c44946b293ba9c605cb8b4ce29b87ec4dc1ad2325b7d56faf0b68c92c605",
+              "typeId": 1
+            },
+            "closedBoxId": "b6a192f21adfeaf3dadd488e8b4350990fdf3dd2bbf709f015c9a070ce8e09b7"
+          }
+        ],
+        "typeId": 3
+      }
+    ]
+  }
+}
+```
+
+Generate a new sidechain block
+```
+$ curl -X POST "http://127.0.0.1:9085/block/generate" -H  "accept: application/json" -H  "Content-Type: application/json" -d "{\"epochNumber\":2,\"slotNumber\":3}"
+```
+
+```
+{
+  "result": {
+    "blockId": "2916bead221938f4a0b7583a605857a5ef7da830e92d85714ff290edf5e113d5"
+  }
+}
+```
+
+Generate a new mainchain block
+```
+$ ./src/zen-cli -regtest generate 1
+```
+```
+[
+  "0c47dfe03fe754b8a3e98946111c3fdfb2daf50ead2fa45570d7103cb9fdcc0e"
+]
+```
+
+Here it is very important to create a block in sidechain and one in mainchain until this message appears on the active sidechain node.
+
+
+```
+[2-Hop-akka.actor.default-dispatcher-4] INFO com.horizen.certificatesubmitter.CertificateSubmitter – Can submit certificate, withdrawal epoch info = WithdrawalEpochInfo(2,1)
+
+
+[2-Hop-akka.actor.default-dispatcher-2] INFO com.horizen.certificatesubmitter.CertificateSubmitter - Start generating proof for 2 withdrawal epoch number, with parameters: withdrawalRequests=(), endWithdrawalEpochBlockHash=09c2746d896c58b20b7c06f69da474562b8112a8c2633279cbaef2fa39d3e279, prevEndWithdrawalEpochBlockHash=033da7b4ee8b35ca8093a3d82b202ef765ce255a8d30e123b8dfcfc8c0ba941f, signersThreshold=5. It can a 
+```
+
+wait... and
+
+```
+INFO com.horizen.certificatesubmitter.CertificateSubmitter – Backward transfer certificate request was successfully created for epoch number 2, with proof […] with quality 7 try to send it to mainchain
+```
+
+
+I kept creating a block on the side chain and another on the main chain until my balance was reflected.
+```
+$ ./src/zen-cli -regtest listaddressgroupings
+```
+
+```
+[
+  [
+    [
+      "ztTZYEyQvsqqG9aW93BHDtRrVEFKrZtMQdM",
+      1082.37500000
+    ],
+    [
+      "ztZMoTcAeaR3gSXncW9L58YWT9kr9mYKNAW",
+      7.62496454
+    ]
+  ],
+  [
+    [
+      "ztcNpQaPCGgM4VGvbnhxccMUabbVgxLggfb",
+      7.50000000
+    ]
+  ],
+  [
+    [
+      "ztcRMkuzncDZkAuLDYLwbNvjvd2UrGPSvd6",
+      5.00000000,
+      ""
+    ]
+  ]
+]
 ```
